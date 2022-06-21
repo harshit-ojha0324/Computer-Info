@@ -17,15 +17,11 @@ for item in s:
             count2+=1
             if("Link-local IPv6 Address" in item):
                 print(item)
-            if(count2==7):
+            if("IPv4 Address" in item):
                 print(item)
-            if(count2==8):
+            if("Subnet Mask" in item):
                 print(item)
-            if(count2==11):
+            if("Default Gateway" in item):
                 print(item)
-
-
-
-
-print(f"Number of adapters are: {count}")
+print(f"Number of adapters are: {int(count/2)}")
 
